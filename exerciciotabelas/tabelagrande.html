@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Tabela</title>
+    <style>
+
+        html, body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.total{
+            text-align: center;
+        }
+
+        thead, tfoot{
+            background-color: rgb(39, 39, 39);
+            color: white;
+        }
+
+    </Style>
+</head>
+<body>
+    <h1>
+        EXERCÍCIO TABELA GRANDE!
+    </h1>
+    <table>
+        <caption>Dados Populacional</caption>
+        <thead>
+            <tr>  
+                <!--Scope: ROW e COL:
+                ROW para Linha
+                e COL e Colunas-->
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>1.100.100</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>1.100.100</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>1.100.100</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>1.100.100</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>1.100.100</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>1.100.100</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>1.100.100</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>1.100.100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="total"><strong>11.100.100</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
