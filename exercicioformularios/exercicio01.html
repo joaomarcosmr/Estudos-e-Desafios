@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começo de Formulários</title>
+</head>
+<body>
+    <!--Um Formulário Simples com botão de Enviar-->
+    <!--Fiz um "action" para enviar os dados do formulário ao cadastro.php e autocomplete off para nao preencher automaticamente-->
+    <!--Usei o method="POST" para os dados não aparecerem na URL-->
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="Nome">Nome:</label> <input type="text" name="Nome" id="Nome"></p>
+        <p><label for="Sobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="Sobrenome"></p>
+        <div>
+            <label for="month">Período Letívo<input type="month" name="month" id="month"></label>
+        </div>
+        <div>
+            <label for="password">Senha: <input type="password" name="password" id="password" required minlength="10"></label>
+        </div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
