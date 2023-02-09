@@ -10,29 +10,39 @@
     <!--Um Formulário Simples com botão de Enviar-->
     <!--Fiz um "action" para enviar os dados do formulário ao cadastro.php e autocomplete off para nao preencher automaticamente-->
     <!--Usei o method="POST" para os dados não aparecerem na URL-->
-    <form action="cadastro.php" method="POST" autocomplete="off">
-        <p><label for="Nome">Nome:</label> <input type="text" name="Nome" id="Nome"></p>
-        <p><label for="Sobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="Sobrenome"></p>
-        <div>
-            <label for="month">Período Letívo<input type="month" name="month" id="month"></label>
-        </div>
-        <div>
-            <label for="password">Senha: <input type="password" name="password" id="password" required minlength="10"></label>
-        </div>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </form>
+    <fieldset>
+        <legend>
+            Dados Escolaridade
+        </legend>
+        <form action="cadastro.php" method="POST" autocomplete="off">
+            <p><label for="Nome">Nome:</label> <input type="text" name="Nome" id="Nome"></p>
+            <p><label for="Sobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="Sobrenome"></p>
+            <div>
+                <label for="month">Período Letívo<input type="month" name="month" id="month"></label>
+            </div>
+            <div>
+                <label for="password">Senha: <input type="password" name="password" id="password" required minlength="10"></label>
+            </div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </fieldset>
     <!--Aula 7-->
     <form>
-        <div id="email">
-            <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email" autocomplete="emai" required>
-        </div>
-        <div id="tel">
-            <label for="tel">Telefone: </label>
-            <input type="tel" name="tel" id="tel" autocomplete="tel" required>
-        </div>
-        <input type="submit" value="Enviar">    
+        <fieldset>
+            <legend>
+                Dados Pessoais
+            </legend>
+            <div id="email">
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" autocomplete="emai" required>
+            </div>
+            <div id="tel">
+                <label for="tel">Telefone: </label>
+                <input type="tel" name="tel" id="tel" autocomplete="tel" required>
+            </div>
+            <input type="submit" value="Enviar">
+        </fieldset>   
     </form>
 </body>
 </html>
