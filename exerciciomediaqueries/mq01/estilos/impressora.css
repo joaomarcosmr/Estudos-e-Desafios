@@ -1,0 +1,12 @@
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace
+}
+
+p#css::after{
+    content: 'Esse site foi criado no HTMl por joão';
+}
