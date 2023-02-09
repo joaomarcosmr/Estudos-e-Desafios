@@ -42,7 +42,53 @@
                 <input type="tel" name="tel" id="tel" autocomplete="tel" required>
             </div>
             <input type="submit" value="Enviar">
-        </fieldset>   
+        </fieldset>
+        <fieldset>
+            <legend>ESTADOS</legend>
+            <label for="select">Selecione seu Estado</label>
+            <!--Testando Código Select-->
+            <select name="select" id="select" required>
+            <optgroup value="Regiões">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+                <option value="TO">TOCANTINS</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+        </select>
+            <div>
+                <label for="iprof">Profissões:  </label>
+                <input type="text" name="prof" id="iprof" list="prof">
+                <datalist id="prof">
+                    <option>Administrador</option>
+                    <option>Dev</option>
+                    <option>Governo</option>
+                    <option>Aboora</option>
+                </datalist>
+            </div>
+        </fieldset>
+    </form>
+    <!--Aula 11 com um pouco de JS fazendo uma calculadora-->
+    <form>
+        <div>
+        <label for="idsoma1">Número 1</label>
+        <input type="number" name="number2" id="idsoma1" oninput="isoma.innerHTML = Number(idsoma1.value) + Number(idsoma2.value)">
+         </div>
+         <div>
+        <label for="idsoma2">Número 2</label>
+        <input type="number" name="number2" id="idsoma2" oninput="isoma.innerHTML = Number(idsoma1.value) + Number(idsoma2.value)">
+         </div>
+         <div>
+            <label for="isoma">Resultado</label>
+            <output name="isoma" id="isoma">0</output>
+         </div>
+    </form>
+    <br>
+    <form>
+        <div>
+            <label for="inum">Nível: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" oninput="ival.InnerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </div>
     </form>
 </body>
 </html>
