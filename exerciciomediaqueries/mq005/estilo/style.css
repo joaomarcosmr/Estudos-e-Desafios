@@ -8,7 +8,6 @@
 body, html{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #D3D3D3;
-    width: 100vw;
     height: 100vh;
 }
 
@@ -23,11 +22,35 @@ header h1{
     padding-bottom: 20px;
 }
 
-header a{
-    background-color: #3f3e3e;
-    text-decoration: none;
+span#icone{
+    background-color: rgba(26, 26, 26, 0.719);
+    display: block;
+    text-align: center;
     color: white;
     padding: 10px;
+}
+
+span#icone:hover{
+    background-color: rgba(75, 75, 75, 0.719);
+}
+
+menu{
+    display: none;
+}
+
+
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #5e5b5b;
+    text-decoration: none;
+    color: white;
     border: 1px solid rgba(175, 175, 175, 0.534);
 }
 
@@ -42,5 +65,9 @@ main{
 
 main h2{
     padding-bottom: 15px;
+}
+
+main p{
+    text-align: justify;
 }
 
