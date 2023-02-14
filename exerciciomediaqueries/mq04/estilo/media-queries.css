@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* Devices Breakpoint 
+Pequenas Telas: até 600px
+Celular: 600px até  768px
+Tablet: 768px ate 992px
+Desktop: 992px até 1200px
+Grandes Telas: Acima de 1200px
+*/
+
+@media print {
+    
+}
+
+/*  ESSE SERIA O CÓDIGO DE MOBILE, PORÉM COM O MOBILE FIRST EU JÁ FIZ ISSO NO CÓDIGO PRINCIPAL, ENTÃO POSSO "IGNORAR"
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (min-width: 600px) and (max-width:768px) {
+    
+}
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);}
+
+
+    img#celular {display: none;}
+    img#tablet {display: block;}
+    img#impressora {display: none;}
+    img#computador {display: none;}
+    img#televisao {display: none;}
+    }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#celular {display: none;}
+    img#tablet {display: none;}
+    img#impressora {display: none;}
+    img#computador {display: block;}
+    img#televisao {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#celular {display: none;}
+    img#tablet {display: none;}
+    img#impressora {display: none;}
+    img#computador {display: none;}
+    img#televisao {display: block;}
+}
